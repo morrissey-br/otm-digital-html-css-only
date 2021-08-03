@@ -14,6 +14,24 @@ body {
     font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
 }
 
+h1 {
+    font-size: 40px;
+}
+
+button {
+    border: none;
+    border-radius: 6px;
+    padding: 8px 24px;
+    background-color: #27feca;
+    font-weight: bold;
+}
+
+button.btn-light {
+    background-color: transparent;
+    border: 1px solid #27feca;
+    color: #27feca;
+}
+
 header {
     display: flex;
     padding: 32px 0px;
@@ -38,4 +56,59 @@ header ul {
 header ul li {
     display: block;
     padding: 0px 24px;
+}
+
+main #primeirachamada {
+    padding: 120px 0px;
+    width: 450px;
+}
+
+main #primeirachamada > * {
+    margin-bottom: 20px;
+}
+
+main #segundachamada {
+    padding: auto;
+}
+
+main #segundachamada > * {
+    text-align: center;
+    margin: 20px auto;
+}
+
+main #segundachamada p:first-child {
+    width: 500px;
+}
+
+#expertises {
+    padding: 40px;
+    background-color: #0a0e2d;
+}
+
+#expertises > div:first-child {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+#expertises .cards-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 5px;
+}
+
+#expertises .card-expertise {
+    background-color: #0d113d;
+    padding: 16px;
+    border-radius: 6px;
+}
+
+#expertises .card-expertise > * {
+    display: block;
+    padding-bottom: 10px;
+    min-width: 200px;
+}
+
+#expertises .card-expertise p {
+    padding-bottom: 0;;
 }
