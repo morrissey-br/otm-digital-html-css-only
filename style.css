@@ -21,7 +21,7 @@ h1 {
 button {
     border: none;
     border-radius: 6px;
-    padding: 8px 24px;
+    padding: 12px 28px;
     background-color: #27feca;
     font-weight: bold;
 }
@@ -68,7 +68,7 @@ main #primeirachamada > * {
 }
 
 main #segundachamada {
-    padding: auto;
+    padding: auto;    
 }
 
 main #segundachamada > * {
@@ -83,6 +83,7 @@ main #segundachamada p:first-child {
 #expertises {
     padding: 40px;
     background-color: #0a0e2d;
+    border-radius: 16px;
 }
 
 #expertises > div:first-child {
@@ -92,23 +93,46 @@ main #segundachamada p:first-child {
 }
 
 #expertises .cards-grid {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    column-gap: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;  
 }
 
 #expertises .card-expertise {
+    width: 220px;
+    height: 180px;
     background-color: #0d113d;
     padding: 16px;
-    border-radius: 6px;
+    margin: 5px;
+    border-radius: 16px;
 }
 
 #expertises .card-expertise > * {
     display: block;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     min-width: 200px;
 }
 
 #expertises .card-expertise p {
-    padding-bottom: 0;;
+    padding-bottom: 0;
+}
+
+#expertises .card-expertise i {
+    color: #27feca;
+}
+
+#cases {
+    padding: 40px;
+    display: flex;
+}
+
+#cases h3 {
+    display: block;
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+#casess .card-case {
+    text-align: center;
 }
