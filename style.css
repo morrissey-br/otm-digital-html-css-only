@@ -124,15 +124,65 @@ main #segundachamada p:first-child {
 
 #cases {
     padding: 40px;
-    display: flex;
 }
 
 #cases h3 {
+    flex-grow: 1;
     display: block;
     text-align: center;
     padding-bottom: 40px;
 }
 
-#casess .card-case {
+#cases #cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#cases .card-case {
+    padding: 20px;
+    width: 200px;
     text-align: center;
 }
+
+#cases .card-case p {
+    padding-bottom: 20px;
+}
+
+#cases .card-case p em {
+    color: #27feca;
+    display: block;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: bold;
+}
+
+#cases .card-case button {
+    width: 100%;
+}
+
+#clientes {
+    margin: 0px -64px;
+    padding: 64px 64px;
+    background-color: #0a0e2d;
+}
+
+#clientes h3 {
+    text-align: center;
+}
+
+#clientes ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    padding: 64px 0px;
+    list-style-type: none;
+}
+
+#clientes ul li img {
+    object-fit: contain;
+    width: 120px;
+}
+
+
