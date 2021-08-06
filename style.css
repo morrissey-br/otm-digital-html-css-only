@@ -1,14 +1,13 @@
 * {
     margin: 0;
     padding: 0;
-}
-
-html {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;  
 }
 
 body {
-    padding: 32px 64px;
+    padding: 32px 20%;
     background-color: #040720;
     color: white;
     font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
@@ -30,6 +29,18 @@ button.btn-light {
     background-color: transparent;
     border: 1px solid #27feca;
     color: #27feca;
+}
+
+button.btn-icon {
+    padding: 0px !important;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    text-align: center;
+}
+
+button.btn-icon > i {
+    display: block;
 }
 
 header {
@@ -63,15 +74,15 @@ main #primeirachamada {
     width: 450px;
 }
 
-main #primeirachamada > * {
+main #primeirachamada>* {
     margin-bottom: 20px;
 }
 
 main #segundachamada {
-    padding: auto;    
+    padding: auto;
 }
 
-main #segundachamada > * {
+main #segundachamada>* {
     text-align: center;
     margin: 20px auto;
 }
@@ -86,7 +97,7 @@ main #segundachamada p:first-child {
     border-radius: 16px;
 }
 
-#expertises > div:first-child {
+#expertises>div:first-child {
     display: flex;
     justify-content: space-between;
     padding-bottom: 20px;
@@ -96,22 +107,22 @@ main #segundachamada p:first-child {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
+    gap: 8px;
 }
 
 #expertises .card-expertise {
-    width: 220px;
-    height: 180px;
+    min-width: 200px;
+    flex-grow: 1;
     background-color: #0d113d;
     padding: 16px;
-    margin: 5px;
     border-radius: 16px;
 }
 
-#expertises .card-expertise > * {
+#expertises .card-expertise>* {
     display: block;
     padding-bottom: 20px;
-    min-width: 200px;
+    width: 200px;
 }
 
 #expertises .card-expertise p {
@@ -136,7 +147,7 @@ main #segundachamada p:first-child {
 #cases #cards-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -174,7 +185,7 @@ main #segundachamada p:first-child {
 
 #clientes ul {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: flex-end;
     padding: 64px 0px;
     list-style-type: none;
@@ -185,4 +196,44 @@ main #segundachamada p:first-child {
     width: 120px;
 }
 
+#contato {
+    display: flex;
+    padding: 40px;
+}
 
+#contato > div {
+    width: 50%;
+}
+
+#contato > div:first-child {
+    padding-right: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#contato div > span {
+    display: block;
+    padding-bottom: 0px;
+}
+
+#contato div > img {
+    display: block;
+    object-fit: contain;
+    height: 100px;
+    margin-left: auto;
+}
+
+#contato form input, #contato form textarea {
+    display: block;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    padding: 12px;
+    background-color: #1a1e3d;
+    width: 100%;
+}
+
+#contato aside form input::placeholder, #contato aside form textarea::placeholder {
+    color: #5a5e7d;
+}
