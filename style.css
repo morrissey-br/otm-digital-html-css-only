@@ -7,7 +7,9 @@
 }
 
 body {
-    padding: 32px 20%;
+    padding: 32px;
+    margin: auto;
+    width: 1200px;
     background-color: #040720;
     color: white;
     font-family: 'Segoe UI', Tahoma, 'Geneva', Verdana, sans-serif;
@@ -18,11 +20,19 @@ h1 {
 }
 
 button {
-    border: none;
+    border: 1px solid transparent;
     border-radius: 6px;
     padding: 12px 28px;
     background-color: #27feca;
     font-weight: bold;
+    color: black;
+}
+
+button:hover {
+    background-color: transparent;
+    border: 1px solid #27feca;
+    color: #27feca;
+    transition-duration: .2s;
 }
 
 button.btn-light {
@@ -31,12 +41,25 @@ button.btn-light {
     color: #27feca;
 }
 
+button.btn-light:hover {
+    border: 1px solid transparent;
+    background-color: #27feca;
+    color: black;
+    transition-duration: .2s;
+}
+
+
 button.btn-icon {
     padding: 0px !important;
     width: 40px;
     height: 40px;
     border-radius: 100%;
     text-align: center;
+    border: none;
+}
+
+button.btn-icon:hover {
+    border: none;
 }
 
 button.btn-icon > i {
@@ -55,8 +78,8 @@ header a {
     text-decoration: none;
 }
 
-header #logo {
-    font-size: 24px;
+header #logo img{
+    height: 48px;
 }
 
 header ul {
@@ -69,22 +92,34 @@ header ul li {
     padding: 0px 24px;
 }
 
+main {
+    position: relative;
+}
+
 main #primeirachamada {
     padding: 120px 0px;
     width: 450px;
 }
 
+main #primeirachamada img {
+    height: 500px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
 main #primeirachamada>* {
-    margin-bottom: 20px;
+    margin-bottom: 32px;
 }
 
 main #segundachamada {
-    padding: auto;
+    padding-bottom: 32px;
+
 }
 
 main #segundachamada>* {
     text-align: center;
-    margin: 20px auto;
+    margin: 32px auto;
 }
 
 main #segundachamada p:first-child {
@@ -137,7 +172,7 @@ main #segundachamada p:first-child {
     padding: 40px;
 }
 
-#cases h3 {
+#cases h2 {
     flex-grow: 1;
     display: block;
     text-align: center;
@@ -153,7 +188,7 @@ main #segundachamada p:first-child {
 
 #cases .card-case {
     padding: 20px;
-    width: 200px;
+    width: 250px;
     text-align: center;
 }
 
@@ -179,7 +214,7 @@ main #segundachamada p:first-child {
     background-color: #0a0e2d;
 }
 
-#clientes h3 {
+#clientes h2 {
     text-align: center;
 }
 
@@ -210,6 +245,12 @@ main #segundachamada p:first-child {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+}
+
+#contato div > p {
+    display: inline-block;
+    width: 300px;
+    padding-bottom: 0px;
 }
 
 #contato div > span {
